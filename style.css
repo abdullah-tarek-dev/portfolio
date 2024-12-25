@@ -1,0 +1,140 @@
+*{
+    padding:0;
+    margin:0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+color:rgb(31, 31, 31); 
+}
+
+section{
+    padding-top:7rem;
+}
+
+/* Start styling of header */
+
+header{
+    font-weight: bolder;  
+    /* position: fixed; */
+    /* z-index: 100; */
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.1rem;
+}
+
+header a{
+    padding:7px;
+    transition: 0.4s ease-in-out;
+}
+header a:hover{
+    color:aliceblue;
+    background-color :rgb(31, 31, 31);
+    border-radius: 10px;
+}
+/* End styling header  */
+
+/* Start styling of section Home */
+
+ .btn .button1{
+    border:1px solid rgb(31, 31, 31);
+    color:rgb(86, 85, 85);
+    padding:10px;
+    border-radius:10px;
+    
+}
+ .btn .button1:hover{
+    color:rgb(232, 232, 232);
+    background-color:rgb(31, 31, 31);
+}
+ .btn .button2{
+    background-color:rgb(31, 31, 31);
+    border-radius:10px;
+    color:rgb(232, 232, 232);
+    padding:10px;
+}
+ .btn .button2:hover{
+    color:rgb(86, 85, 85);
+    border:1px solid rgb(31, 31, 31);
+    background-color: transparent;
+}
+.info .icon a{
+    border: 2px solid beige ;
+    border-radius:50%;
+    padding:0 6px;
+    background-color: beige;
+}
+.info .icon a:hover{
+    border: 2px solid rgb(31, 31, 31) ;
+    border-radius:50%;
+    padding:0 6px;
+}
+
+ .info .sec12 h6{
+    color:#605f5f;
+}
+ .info .sec1 , .info .sec2 {
+    border:1px solid #000;
+    border-radius:20px;
+    padding:20px 40px;
+    text-align:center;
+}
+
+.words p{
+    color:#605f5f;
+    letter-spacing:1px ;
+}
+.three td{
+    padding:20px 50px;
+    font-size: 2.1rem;
+}
+
+/* projects  section */
+
+.four .container .card{
+    height:450px;
+    width: 20rem;
+    border:2px solid #000;
+    border-radius:25px;
+    margin-bottom:20px;
+  }
+
+  .four .container .card img{
+  height:280px;
+  width:17em;
+  margin: 20px auto ;
+  border-radius:20px;
+  }
+  .four .container .card .under h2{
+text-align:center;
+font-weight:bold;
+font-size:26px;
+padding-bottom:20px;
+  }
+  .four .container .card .under a{
+text-decoration: none;
+color:#000;
+border:1px solid #000;
+border-radius:20px;
+padding:10px 20px;
+font-weight:bold;
+text-align:center;
+margin-left:24px;
+  }
+  .four .container .card .under .one_link{
+    padding:10px 33px
+  }
+  .four .container .card .under a:hover{
+    background-color: #000;
+    color:#fff;
+  }
+/* End styling of section skills */
+
+/* Start styling of section contact */
+
+.five .icons a {
+    font-size: 1.7rem;
+    padding:40px 0;
+    color: aqua ;
+}
