@@ -11,17 +11,19 @@
 <body>
   <!-- Start structure of Header -->
 
-  <header class="w-full h-full bg-white " >
+  <header class="w-full  bg-white " >
     <div class="container w-4/5 mx-auto py-4 " >
         <h1 id="abdullah" class="text-4xl cursor-pointer"> Abdullah </h1>
-        <nav class="space-x-6 text-lg">
+        <nav class="md:space-x-5 text-lg" id="nav">
             <a href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#Exprience">Expriences</a>
             <a href="#Projects">Projects</a>
             <a href="#Contact">Contact me</a>
         </nav>
+        <div class="special"> <button id="menu-button" class="dash font-semibold text-3xl">--</button></div>
     </div>
+
 </header>
 
 <!-- End structure of Header -->
@@ -34,11 +36,11 @@
         </div>
         <div class="info text-center">
             <div class="head">
-                <h4 class="text-lg">Hello, I am</h4>
-                <h1 class="text-5xl">Abdullah Tarek</h1>
-                <h3 class="text-xl">Frontend Developer</h3>
+                <h4 class="md:text-lg">Hello, I am</h4>
+                <h1 class="text-4xl md:text-5xl">Abdullah Tarek</h1>
+                <h3 class="md:text-xl">Frontend Developer</h3>
             </div>
-         <div class="btn my-6 space-x-6">
+         <div class="btn my-6 space-x-5 grid grid-cols-2">
             <a href="CV.pdf" class="button1">Download CV</a>
             <a href="#contact" class="button2">Contact Info</a>  
          </div>
@@ -56,13 +58,10 @@
 
 <section id="About" class="w-full h-full">
     <h1 class="text-center text-5xl mb-8 pb-9 font-bold">About Me</h1>
-    <div class=" w-4/5 mx-auto flex ">
+    <div class="container w-4/5 mx-auto flex flex-col">
         
-            <div class="photo">
-                <img src="./images/photo2.jpg" alt="this my photo" class=" rounded-3xl">
-            </div>
             <div class="info space-x-4">
-                <div class="sec12 flex gap-8 justify-center pb-28 ">
+                <div class="sec12 flex gap-8 justify-center flex-wrap pb-28 ">
                     <div class="sec1">
                         <i class="fa-solid fa-award" id="icon"></i>
                         <h1 class="text-xl">Experience</h1>
@@ -76,12 +75,11 @@
                         <h6>Faculity of Engineering</h6>
                     </div>
                 </div>
-    
-                    <div class="words text-xl w-3/4 text-center mt-4 mb-8 pb-5 pl-8 float-end">
-    <p>I'm Abdullah Tarek Abdullah Darwish, I study at Al-Azhar University in the Department of Systems and Information. I started learning web programming in my second year of university and I loved this field and I develop myself 
-        every day to become a very successful and famous developer and I will excel in my field to excel above all others, and I look forward to a very good place to highlight my skills and develop more and more </p>
-                    </div>
             </div>
+            <div class="words text-xl  text-center mt-4 mb-8 pb-5 pl-8 ">
+              <p>I'm Abdullah Tarek Abdullah Darwish, I study at Al-Azhar University in the Department of Systems and Information. I started learning web programming in my second year of university and I loved this field and I develop myself 
+                  every day to become a very successful and famous developer and I will excel in my field to excel above all others, and I look forward to a very good place to highlight my skills and develop more and more </p>
+                              </div>
     
     </div>
 </section>
@@ -92,56 +90,60 @@
 
 <section id="Exprience" class="three w-full h-full">
     <h1 class="text-center text-5xl mb-8 pb-9 font-bold">Expriences</h1>
-    <div class="container w-4/5 mx-auto flex justify-between font-semibold">
-        <div class="chec pb-8 mb-7 ">
+    <div class="container w-4/5 flex justify-between flex-wrap mx-auto  font-semibold">
+        <div class="">
               <table>
                   <tr>
                     <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> HTML</h1>
                     </td>
                     <td><h1>90%</h1></td>
                   </tr>
+
                   <tr>
                     <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> CSS</h1>
                     </td>
                     <td><h1>90%</h1></td>
-                    
                   </tr>
+
+                  <tr>
+                    <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> Tailwind</h1>   </td>
+                  <td><h1>85%</h1></td>
+                </tr>
+
                   <tr>
                     <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> JavaScript</h1>
                     </td>
-                    <td><h1>85%</h1></td>
-                    
+                    <td><h1>80%</h1></td>
                   </tr>
+
                   <tr>
-                    <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> Bootstrap</h1>                    </td>
-                  <td><h1>75%</h1></td>
-                </tr>
-                <tr>
-                    <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> Jequery</h1>                    </td>
+                    <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> Bootstarp</h1>   </td>
                     <td><h1>70%</h1></td>
                 </tr>
+
               </table>
     </div>
-    <div>
-        <table>
-            <tr>
-                <td> Teamwork</td>
-               
-            </tr>
-            <tr>
-                <td>Creative Thinking</td>
-            </tr>
-            <tr>
-               <td> Effective Communication</td>
-            </tr>
-            <tr>
-               <td> Working Under Pressure</td>
-            </tr>
-            <tr>
-                <td>Leadership</td>
-            </tr>
-        </table>
-    </div>
+    <div class="">
+      <table>
+          <tr>
+            <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> Jequery</h1>
+            </td>
+            <td><h1>60%</h1></td>
+          </tr>
+          <tr>
+            <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> Git</h1>
+            </td>
+            <td><h1>70%</h1></td>
+            
+          </tr>
+          <tr>
+            <td>    <h1><span><i class="fa-solid fa-circle-check"></i></span> React</h1>
+            </td>
+            <td><h1>70%</h1></td>
+            
+          </tr>
+      </table>
+</div>
 </section>
 <!-- End structure of section skills -->
 
@@ -149,8 +151,8 @@
 
 <section id="Projects" class="four w-full">
     <h1 class="text-center text-5xl mb-8 pb-9 font-bold">Projects</h1>
-    <div class="container flex justify-between gap-2 flex-wrap w-4/5 m-auto">
-        <div class="card h-auto w-auto ">
+    <div class="container  w-4/5 m-auto">
+        <div class="card ">
             <img src="./images/farm.jpg"  alt="...">
             <div class="under">
               <h2 class="head">Farming_project</h2>
@@ -201,7 +203,7 @@
           <a href="https://github.com/abdullah-tarek-dev" aria-label="GitHub"><i class="fa-brands fa-github " id="icon1"></i></a>
           <a href="https://www.facebook.com/profile.php?id=61565379813656&mibextid=ZbWKwL" aria-label="Facebook"><i class="fa-brands fa-facebook text-blue-600"></i></a>
           <a href="https://wa.me/201020072378" aria-label="whatsApp"><i class="fa-brands fa-square-whatsapp text-green-500"></i>
-            <a href="mailto:engabdullahtarekdarwish@gmail.com"><i class="fa-solid fa-envelope text-red-500"></i></a>
+          <a href="mailto:engabdullahtarekdarwish@gmail.com"><i class="fa-solid fa-envelope text-red-500"></i></a>
           </a>
           
         </div>
