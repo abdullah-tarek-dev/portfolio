@@ -1,6 +1,6 @@
 *{
-    padding:0;
-    margin:0;
+padding:0;
+margin:0;
 box-sizing: border-box;
 scroll-behavior: smooth;
 color:rgb(31, 31, 31); 
@@ -14,8 +14,8 @@ section{
 
 header{
     font-weight: bolder;  
-    /* position: fixed; */
-    /* z-index: 100; */
+    position: fixed;
+    z-index: 100;
 }
 
 header .container{
@@ -32,6 +32,9 @@ header a:hover{
     color:aliceblue;
     background-color :rgb(31, 31, 31);
     border-radius: 10px;
+}
+.special{
+    display: none;
 }
 /* End styling header  */
 
@@ -86,14 +89,20 @@ header a:hover{
     letter-spacing:1px ;
 }
 .three td{
-    padding:20px 50px;
-    font-size: 2.1rem;
+    padding:20px 20px;
+    font-size: 1.8rem;
 }
 
 /* projects  section */
+#Projects .container{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 .four .container .card{
-    height:450px;
+    height:435px;
     width: 20rem;
     border:2px solid #000;
     border-radius:25px;
@@ -137,4 +146,108 @@ margin-left:24px;
     font-size: 1.7rem;
     padding:40px 0;
     color: aqua ;
+}
+
+/* Responsive Screen */
+@media (min-width: 899px) and (max-width: 2000px){
+#Home{
+    width:90%;
+    margin:auto;
+}
+#ِHome img{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 899px) {
+    header .container h1{
+        font-size:1.8rem;
+    }
+    header nav a{
+       font-size:0.7rem;
+    }
+#Home{
+width:80%;
+margin:auto;
+}
+#Home .btn{
+display:grid;
+grid-template-columns:1fr ;
+gap: 13px;
+}
+
+#About .container{
+    display: flex;
+}
+
+@media (max-width: 704px){
+
+    #Home .container{
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #Home .container img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    } 
+}
+@media (max-width: 573px){
+    .special{
+        display:block;
+    }
+     header nav{
+        display: none;
+    }
+    header nav a{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        text-align: center;
+        font-size:1.2rem;
+    }
+    #Exprience td{
+
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 388px){
+    .four .container .card .under .one_link{
+        padding:10px 15px 
+    }
+    .four .container .card{
+        height:380px;
+        width: 18rem;
+        border:2px solid #000;
+        border-radius:23px;
+        margin-bottom:18px;
+      }
+    
+      .four .container .card img{
+      height:230px;
+      width:15em;
+      margin: 18px auto ;
+      border-radius:18px;
+      }
+      .four .container .card .under h2{
+    text-align:center;
+    font-weight:bold;
+    font-size:24px;
+    padding-bottom:18px;
+      }
+      .four .container .card .under a{
+    text-decoration: none;
+    color:#000;
+    border:1px solid #000;
+    border-radius:18px;
+    padding:8px 18px;
+    font-weight:bold;
+    text-align:center;
+    margin-left:22px;
+      }
+}
 }
